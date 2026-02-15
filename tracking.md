@@ -10,3 +10,4 @@ commit 2
 - Add: Componente Nav para rutas principales.
 - Update: Home con estructura base.
 - Add: Página /motivacion con texto inicial.
+- Add: Página /agradecimientos con tarjetas.

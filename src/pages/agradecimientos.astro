@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const agradecimientos = [
+  { titulo: "Familia", texto: "Por la paciencia y el apoyo, incluso cuando todo era prueba y error." },
+  { titulo: "Amigos", texto: "Por empujarme a terminar lo que empiezo." },
+  { titulo: "Internet", texto: "Por la documentación, los ejemplos y la comunidad." },
+];
+---
+
+<BaseLayout title="Agradecimientos | Jesser">
+  <section class="card">
+    <h1>Agradecimientos</h1>
+    <p class="small">Una página tipo libro: breve, honesta, sin humo.</p>
+    <div style="display:grid; gap:12px; margin-top:14px;">
+      {agradecimientos.map((a) => (
+        <article class="card" style="padding:14px;">
+          <h2 style="margin:0 0 6px;">{a.titulo}</h2>
+          <p style="margin:0;" class="small">{a.texto}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
