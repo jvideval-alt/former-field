@@ -1,0 +1,17 @@
+---
+const { title = "Mi sitio Astro" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main style="max-width: 900px; margin: 40px auto; font-family: system-ui;">
+      <slot />
+    </main>
+  </body>
+</html>
