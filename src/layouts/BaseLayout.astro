@@ -1,17 +1,36 @@
 ---
-const { title = "Mi sitio Astro" } = Astro.props;
----
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
 
+const {
+  title = "Jesser Videla",
+  description = "Sitio personal construido con Astro",
+} = Astro.props;
+---
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
     <title>{title}</title>
   </head>
   <body>
-    <main style="max-width: 900px; margin: 40px auto; font-family: system-ui;">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" aria-label="Ir al inicio" style="display:flex; gap:10px; align-items:center;">
+          <span style="font-weight:800;">Jesser</span>
+          <span class="small">| sitio</span>
+        </a>
+        <Nav />
+      </div>
+    </header>
+
+    <main class="container">
       <slot />
+      <footer class="footer small">
+        © {new Date().getFullYear()} · Hecho con Astro
+      </footer>
     </main>
   </body>
 </html>
