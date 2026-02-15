@@ -9,3 +9,4 @@ commit 2
 - Add: BaseLayout con navegación y estilos globales.
 - Add: Componente Nav para rutas principales.
 - Update: Home con estructura base.
+- Add: Página /motivacion con texto inicial.
