@@ -11,3 +11,6 @@ commit 2
 - Update: Home con estructura base.
 - Add: Página /motivacion con texto inicial.
 - Add: Página /agradecimientos con tarjetas.
+- Add: Página /agradecimientos con tarjetas。
+- Add: Página /sobre-mi con descripción personal y stack actual.
+- Update: /contacto usa BaseLayout, bloque card, mailto y nota de alias anti-spam.
